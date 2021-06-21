@@ -1,0 +1,10 @@
+{% for obj in queryset %}
+
+<h1>{{obj.title}}</h1>
+<p>{{ obj.content|safe }}</p>
+<br>
+<br>
+<p>
+    {{ obj.content_upload|safe }}
+</p>
+{% endfor %}
